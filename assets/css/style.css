@@ -71,3 +71,7 @@
 .pequena {
     width: 33%;
 }
+
+a {
+    text-decoration: none;
+}

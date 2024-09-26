@@ -21,7 +21,7 @@
     />
     <title>FESHOW!</title>
   </head>
-  <body>
+  <body class="d-flex flex-column" style='min-height:100vh;'>
     <header>
       <!-- MENU -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -87,53 +87,24 @@
       <!-- FIM DO MENU -->
     </header>
 
-    <main>
+    <main class="flex-fill py-5">
       <div class="container mt-5">
         <h1 class="text-center text-danger mb-4">Cadastre-se na FESHOW</h1>
         <form id="form-evento">
           <!-- Início do formulário -->
-          <div class="input-group mb-3">
-            <span class="input-group-text">Primeiro e último nome</span>
-            <input type="text" aria-label="First name" class="form-control">
-            <input type="text" aria-label="Last name" class="form-control">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email do Usuário</label>
           </div>
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">@</span>
-            <input type="text" class="form-control" placeholder="Nome de Usuário" aria-label="Recipient's Username" aria-describedby="basic-addon1">
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Senha do Usuário</label>
           </div>
-          <div class="row mb-3">
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Email do Usuário" aria-label="Recipient's username" aria-describedby="basic-addon2">
-              <span class="input-group-text" id="basic-addon2">@example.com</span>
-            </div>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Confirmar Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
-              <span class="input-group-text" id="basic-addon2">@example.com</span>
-            </div>
-              <div class="form-floating mb-3">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
-              <label for="floatingPassword">Senha</label>
-            </div>
-              <div class="form-floating mb-3">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="Confirmar Senha">
-              <label for="floatingPassword">Confirmar Senha</label>
-            </div>
-            <div class="input-group">
-              <label class="input-group-text" for="inputGroupSelect01">Estados</label>
-              <select class="form-select" id="inputGroupSelect01">
-                <option value="1">São Paulo</option>
-                <option value="2">Rio de Janeiro</option>
-                <option value="3">Minas Gerais</option>
-                <option value="4">Mato Grosso do Sul</option>
-                <option value="5">Paraná</option>
-              </select>
-            </div>
-          </div>
-          <p>Já tem conta?<a href="login.html"> Logue!</a></p>
+          <p>Não tem conta ainda?<a href="cadastro.html"> Cadastre-se!</a></p>
         </form>
         
     <footer>
-      <div class="container my-2 text-bg-dark">
+      <div class="container-fluid my-2 text-bg-dark">
         <div class="row g-2 mt-5 py-3">
           <div class="col-sm-12 col-md-4">
             <p class="text-center text-light">
