@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/feshowicon/feshowicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>FESHOW!</title>
+  </head>
+  <body>
+    <header>
+      <!-- MENU -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand text-danger d-flex align-items-center justify-content-center"
+            href="#"
+            ><i class="bi bi-mic-fill fs-3 text-danger"></i>FESHOW!</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Eventos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index.html">Pesquisar</a></li>
+                  <li><a class="dropdown-item" href="cadastro.html">Criar</a></li>
+                  <li><a class="dropdown-item" href="#">Editar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quem Somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Pesquisar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Pesquisar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- FIM DO MENU -->
+    </header>
+
+    <main>
+      <div class="container mt-5">
+        <h1 class="text-center mb-4">Cadastro de Evento Cultural</h1>
+        <form id="form-evento">
+          <!-- Início do formulário -->
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="titulo" placeholder="Evento Legal" required />
+            <label for="titulo" class="form-label">Título do Evento</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea class="form-control" id="descricao" rows="3" placeholder="Descrição" required></textarea>
+            <label for="descricao" class="form-label">Descrição:</label>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="data" class="form-label">Data do Evento:</label>
+              <input type="date" class="form-control" id="data" required />
+            </div>
+            <div class="col-md-6">
+              <label for="horario" class="form-label">Horário do Evento:</label>
+              <input type="time" class="form-control" id="horario" required />
+            </div>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="titulo" placeholder="Evento Legal" required />
+            <label for="titulo" class="form-label"> Local do Evento</label>
+          </div>
+          <!-- Adicione mais campos de acordo com a necessidade -->
+        </form>
+        <div class="mb-3">
+          <div class="col-md-6">
+            <h4 class="mt-3">Categoria do Evento</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Eletrônica
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Rock
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Jazz
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Rhythm and Blues (R&B)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Country
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Pop
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Hip-Hop
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Clássica
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Reggae
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Bossa Nova
+          </label>
+        </div>
+        <div class="mt-3">
+          <label for="formFile" class="form-label">Escolha a imagem do evento</label>
+          <input class="form-control" type="file" id="formFile">
+        </div>
+      </div>
+    </div>
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Classificação Indicativa</option>
+      <option value="1">Maior de 18 anos</option>
+      <option value="2">Maior de 16 anos</option>
+      <option value="3">Maior de 14 anos</option>
+      <option value="4">Maior de 12 anos</option>
+      <option value="5">Maior de 10 anos</option>
+      <option value="6">Maior de 12 anos</option>
+      <option value="7">Maior de 10 anos</option>
+      <option value="8">Livre para todos</option>
+    </select>
+    <h4 class="mt-3">Acessibilidade</h4>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckDefault">Rampas e Corrimões</label>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckDefault">Placas de Sinalização para cegos</label>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckDefault">Vagas de Estacionamento para Deficiente</label>
+    </div>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckDefault">Banheiros Adaptados</label>
+    </div>
+    <div class="form-check form-switch mb-4">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckDefault">Intérprete de Libras</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+        <!-- Fim do formulário -->
+      </div>
+    </main>
+
+    <footer>
+      <div class="container-fluid my-2 text-bg-dark">
+        <div class="row g-2 mt-5 py-3">
+          <div class="col-sm-12 col-md-4">
+            <p class="text-center text-light">
+              Rua Raul Fratti, 430, Itapeva - SP, 18410-480
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <p class="text-center text-light">
+              CONTATO: (15)9922-5500(Telefone/Whatsapp)
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <p class="text-light">Feito por: Paulo Henrique dos Santos&copy;</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
