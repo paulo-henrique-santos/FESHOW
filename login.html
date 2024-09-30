@@ -21,14 +21,14 @@
     />
     <title>FESHOW!</title>
   </head>
-  <body class="d-flex flex-column" style='min-height:100vh;'>
+  <body class="d-flex flex-column" style="min-height:100vh;">
     <header>
       <!-- MENU -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a
             class="navbar-brand text-danger d-flex align-items-center justify-content-center"
-            href="#"
+            href="index.html"
             ><i class="bi bi-mic-fill fs-3 text-danger"></i>FESHOW!</a
           >
           <button
@@ -49,36 +49,28 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class=""
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Eventos
+                  
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Pesquisar</a></li>
-                  <li><a class="dropdown-item" href="cadastro.html">Criar</a></li>
-                  <li><a class="dropdown-item" href="editarevento.html">Editar</a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="cadastro.html"></a></li>
+                  <li><a class="dropdown-item" href="editarevento.html"></a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Quem Somos?</a>
+                <a class="nav-link" href="#"></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
+                <a class="nav-link" href="#"></a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Pesquisar"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Pesquisar
+                
               </button>
             </form>
           </div>
@@ -88,8 +80,8 @@
     </header>
 
     <main class="flex-fill py-5">
-      <div class="container mt-5">
-        <h1 class="text-center text-danger mb-4">Cadastre-se na FESHOW</h1>
+      <div class="container">
+        <h1 class="text-center text-danger p-5">Logue na FESHOW</h1>
         <form id="form-evento">
           <!-- Início do formulário -->
           <div class="form-floating mb-3">
@@ -101,11 +93,22 @@
             <label for="floatingPassword">Senha do Usuário</label>
           </div>
           <p>Não tem conta ainda?<a href="cadastro.html"> Cadastre-se!</a></p>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Lembre-se de mim neste computador
+            </label>
+          </div>
+          <div class="col-auto my-4">
+            <button type="submit" class="btn btn-primary mb-3"><a href="index.html">Logar</a></button>
+          </div>
         </form>
+      </div>
+    </main>
         
     <footer>
-      <div class="container-fluid my-2 text-bg-dark">
-        <div class="row g-2 mt-5 py-3">
+      <div class="container-fluid text-bg-dark">
+        <div class="row g-2">
           <div class="col-sm-12 col-md-4">
             <p class="text-center text-light">
               Rua Raul Fratti, 430, Itapeva - SP, 18410-480
@@ -125,3 +128,33 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Evento feito!!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Evento criado com sucesso
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>

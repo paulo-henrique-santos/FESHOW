@@ -21,245 +21,267 @@
     />
     <title>FESHOW!</title>
   </head>
-  <body>
+  <body class="d-flex flex-column" style="min-height:100vh;">
     <header>
-      <!-- MENU -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a
-            class="navbar-brand text-danger d-flex align-items-center justify-content-center"
-            href="#"
-            ><i class="bi bi-mic-fill fs-3 text-danger"></i>FESHOW!</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Eventos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Pesquisar</a></li>
-                  <li><a class="dropdown-item" href="cadastro.html">Criar</a></li>
-                  <li><a class="dropdown-item" href="editarevento.html">Editar</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Quem Somos?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Pesquisar"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Pesquisar
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a
+                class="navbar-brand text-danger d-flex align-items-center justify-content-center"
+                href="index.html"
+                ><i class="bi bi-mic-fill fs-3 text-danger"></i>FESHOW!</a
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
               </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-      <!-- FIM DO MENU -->
-    </header>
-
-    <main>
-      <div class="container mt-5">
-        <h1 class="text-center mb-4">Cadastro de Evento Cultural</h1>
-        <form id="form-evento">
-          <!-- Início do formulário -->
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="titulo" placeholder="Evento Legal" required />
-            <label for="titulo" class="form-label">Título do Evento</label>
-          </div>
-          <div class="form-floating mb-3">
-            <textarea class="form-control" id="descricao" rows="3" placeholder="Descrição" required></textarea>
-            <label for="descricao" class="form-label">Descrição:</label>
-          </div>
-          <div class="row mb-3">
-            <div class="col-md-6">
-              <label for="data" class="form-label">Data do Evento:</label>
-              <input type="date" class="form-control" id="data" required />
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Eventos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Pesquisar</a></li>
+                      <li><a class="dropdown-item" href="cadastrarevento.html">Criar</a></li>
+                      <li><a class="dropdown-item" href="#">Editar</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Quem Somos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Pesquisar"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Pesquisar
+                  </button>
+                  <button class="btn btn-warning ms-2" type="submit"><a class="navlogin" href="login.html">Login/Cadastrar</a>
+                  </button>
+                </form>
+              </div>
             </div>
-            <div class="col-md-6">
-              <label for="horario" class="form-label">Horário do Evento:</label>
-              <input type="time" class="form-control" id="horario" required />
-            </div>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="titulo" placeholder="Evento Legal" required />
-            <label for="titulo" class="form-label"> Local do Evento</label>
-          </div>
-        </form>
+          </nav>
+          <!-- FIM DO MENU -->
+        </header>
 
-        <!-- FIM DO FORMULÁRIO -->
-
-        <!-- INICIO DAS CHECK -->
-
-        <h4 class="mt-3">Categoria do Evento</h4>
-
-            <div class="row">
-              <div class="col">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Eletrônica
-                  </label>
+        <main class="flex-fill py-5">
+            <div class="container mt-5">
+              <h1 class="text-center mb-4">Cadastro de Evento Cultural</h1>
+              <form id="form-evento">
+                <!-- Início do formulário -->
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="titulo" placeholder="Evento Legal" required />
+                  <label for="titulo" class="form-label">Título do Evento</label>
                 </div>
-              </div>
-              <div class="col">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Rock
-                  </label>
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" id="descricao" rows="3" placeholder="Descrição" required></textarea>
+                  <label for="descricao" class="form-label">Descrição:</label>
                 </div>
-              </div>
-              <div class="col">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Jazz
-                  </label>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="data" class="form-label">Data do Evento:</label>
+                    <input type="date" class="form-control" id="data" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="horario" class="form-label">Horário do Evento:</label>
+                    <input type="time" class="form-control" id="horario" required />
+                  </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      R&B
-                    </label>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="titulo" placeholder="Evento Legal" required />
+                  <label for="titulo" class="form-label"> Local do Evento</label>
+                </div>
+              </form>
+      
+              <!-- FIM DO FORMULÁRIO -->
+      
+              <!-- INICIO DAS CHECK -->
+      
+              <h4 class="mt-3">Categoria do Evento</h4>
+      
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Eletrônica
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Rock
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Jazz
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            R&B
+                          </label>
+                                </div>
+                    </div>
+                      <div class="col">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Country
+                          </label>
                           </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Pop
+                          </label>
+                          </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Hip-Hop
+                          </label>
+                          </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Clássica
+                          </label>
+                          </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Reggae
+                          </label>
+                          </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Funk
+                          </label>
+                          </div>
+                      </div>
+                  </div>
+      
+                    <!--FIM DAS CHECK  -->
+      
+                <!-- CLASSIFICAÇÃO INDICATIVA -->
+      
+              <div class="mt-3 my-3">
+                <label for="formFile" class="form-label">Escolha a imagem do evento</label>
+                <input class="form-control" type="file" id="formFile">
               </div>
-                <div class="col">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Country
-                    </label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Classificação Indicativa</option>
+            <option value="1">Maior de 18 anos</option>
+            <option value="2">Maior de 16 anos</option>
+            <option value="3">Maior de 14 anos</option>
+            <option value="4">Maior de 12 anos</option>
+            <option value="5">Maior de 10 anos</option>
+            <option value="6">Maior de 12 anos</option>
+            <option value="7">Maior de 10 anos</option>
+            <option value="8">Livre para todos</option>
+          </select>
+      
+          <!-- FIM DAS CLASSIFICAÇÃO INDICATIVA -->
+          
+          <!-- ACESSIBILIDADE -->
+      
+          <h4 class="mt-3">Acessibilidade</h4>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Rampas e Corrimões</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Placas de Sinalização para cegos</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Vagas de Estacionamento para Deficiente</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Banheiros Adaptados</label>
+          </div>
+          <div class="form-check form-switch mb-4">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Intérprete de Libras</label>
+          </div>
+      
+          <!-- FIM DA ACESSIBILIDADE -->
+      
+          <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Cadastrar Evento
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Evento Cadastrado com Sucesso!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        Seu evento foi criado com sucesso!
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Pop
-                    </label>
-                    </div>
-                </div>
-                <div class="col">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Hip-Hop
-                    </label>
-                    </div>
-                </div>
-                <div class="col">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Clássica
-                    </label>
-                    </div>
-                </div>
-                <div class="col">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Reggae
-                    </label>
-                    </div>
-                </div>
-                <div class="col">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Funk
-                    </label>
                     </div>
                 </div>
             </div>
-
-              <!--FIM DAS CHECK  -->
-
-          <!-- CLASSIFICAÇÃO INDICATIVA -->
-
-        <div class="mt-3 my-3">
-          <label for="formFile" class="form-label">Escolha a imagem do evento</label>
-          <input class="form-control" type="file" id="formFile">
-        </div>
-    <select class="form-select" aria-label="Default select example">
-      <option selected>Classificação Indicativa</option>
-      <option value="1">Maior de 18 anos</option>
-      <option value="2">Maior de 16 anos</option>
-      <option value="3">Maior de 14 anos</option>
-      <option value="4">Maior de 12 anos</option>
-      <option value="5">Maior de 10 anos</option>
-      <option value="6">Maior de 12 anos</option>
-      <option value="7">Maior de 10 anos</option>
-      <option value="8">Livre para todos</option>
-    </select>
-
-    <!-- FIM DAS CLASSIFICAÇÃO INDICATIVA -->
-    
-    <!-- ACESSIBILIDADE -->
-
-    <h4 class="mt-3">Acessibilidade</h4>
-    <div class="form-check form-switch">
-      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-      <label class="form-check-label" for="flexSwitchCheckDefault">Rampas e Corrimões</label>
-    </div>
-    <div class="form-check form-switch">
-      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-      <label class="form-check-label" for="flexSwitchCheckDefault">Placas de Sinalização para cegos</label>
-    </div>
-    <div class="form-check form-switch">
-      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-      <label class="form-check-label" for="flexSwitchCheckDefault">Vagas de Estacionamento para Deficiente</label>
-    </div>
-    <div class="form-check form-switch">
-      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-      <label class="form-check-label" for="flexSwitchCheckDefault">Banheiros Adaptados</label>
-    </div>
-    <div class="form-check form-switch mb-4">
-      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-      <label class="form-check-label" for="flexSwitchCheckDefault">Intérprete de Libras</label>
-    </div>
-
-    <!-- FIM DA ACESSIBILIDADE -->
-
-    <button type="submit" class="btn btn-primary">Cadastrar Evento</button>
-      </div>
-    </main>
-
+          </main>
+        
     <footer>
-      <div class="container-fluid my-2 text-bg-dark">
-        <div class="row g-2 mt-5 py-3">
+      <div class="container-fluid text-bg-dark">
+        <div class="row g-2">
           <div class="col-sm-12 col-md-4">
             <p class="text-center text-light">
               Rua Raul Fratti, 430, Itapeva - SP, 18410-480
