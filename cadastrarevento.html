@@ -23,68 +23,68 @@
   </head>
   <body class="d-flex flex-column" style="min-height:100vh;">
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a
-                class="navbar-brand text-danger d-flex align-items-center justify-content-center"
-                href="index.html"
-                ><i class="bi bi-mic-fill fs-3 text-danger"></i>FESHOW!</a
-              >
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Eventos
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Pesquisar</a></li>
-                      <li><a class="dropdown-item" href="cadastrarevento.html">Criar</a></li>
-                      <li><a class="dropdown-item" href="#">Editar</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Quem Somos?</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
-                  </li>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand text-danger d-flex align-items-center justify-content-center"
+            href="index.html"
+            ><i class="bi bi-mic-fill fs-3 text-danger"></i>FESHOW!</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Eventos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Pesquisar</a></li>
+                  <li><a class="dropdown-item" href="cadastrarevento.html">Criar</a></li>
+                  <li><a class="dropdown-item" href="#">Editar</a></li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Pesquisar"
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-outline-success" type="submit">
-                    Pesquisar
-                  </button>
-                  <button class="btn btn-warning ms-2" type="submit"><a class="navlogin" href="login.html">Login/Cadastrar</a>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </nav>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quem Somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Pesquisar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Pesquisar
+              </button>
+              <button type="button" class="btn btn-danger ms-2"><a class="navlogin text-light" href="login.html">Login/Cadastrar</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
           <!-- FIM DO MENU -->
         </header>
 
@@ -255,9 +255,11 @@
           <!-- FIM DA ACESSIBILIDADE -->
       
           <!-- Button trigger modal -->
+            <div class="d-grid gap-2">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Cadastrar Evento
                 </button>
+            </div>
                 
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
